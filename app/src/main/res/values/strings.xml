@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FlickrPhotos</string>
+    <string name="visit_website">Visit Website</string>
+    <string name="shared_element">image</string>
+    <string name="img_saved_successfully">Image Saved Successfully</string>
+    <string name="failed_save_img">Failed to Save Image</string>
+    <string name="download">Download</string>
+</resources>

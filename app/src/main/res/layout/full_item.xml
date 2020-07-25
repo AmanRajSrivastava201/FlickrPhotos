@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/full_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/full_image_height"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:padding="@dimen/dp_16"
+        android:text="@string/download"
+        android:textColor="@color/colorWhite"
+        android:drawablePadding="@dimen/dp_8"
+        android:background="@drawable/custom_border"
+        android:backgroundTint="@color/lightBlack"
+        android:drawableEnd="@drawable/download_vector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/full_image" />
+
+    <Button
+        android:id="@+id/visit_website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_16"
+        android:background="@drawable/custom_border"
+        android:backgroundTint="@color/lightBlack"
+        android:padding="@dimen/dp_16"
+        android:text="@string/visit_website"
+        android:drawableStart="@drawable/web_vector"
+        android:drawablePadding="@dimen/dp_8"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/full_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
