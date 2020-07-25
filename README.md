@@ -27,4 +27,3 @@ FlickrPhotos app uses flickr api to show recent images and image info
 * Share element transition animation for full screen
 * Download image to storage on Button click
 * Open webview for flickR image on Button click
-* Code comments on every function
