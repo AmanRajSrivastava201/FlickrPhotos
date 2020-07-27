@@ -5,6 +5,8 @@ import android.widget.ImageView
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.bumptech.glide.request.RequestOptions
+import com.example.flickrphotos.R
 import com.github.chrisbanes.photoview.PhotoView
 
 /**
@@ -16,8 +18,18 @@ fun ImageView.loadImageFromLink(link: String?) {
             .load(link)
             .diskCacheStrategy(DiskCacheStrategy.ALL)
             .dontAnimate()
+            .apply(createRequestOptions())
             .into(this)
     }
+}
+
+/**
+ * This method is used to create Request Options for Glide
+ */
+fun createRequestOptions(): RequestOptions {
+    return RequestOptions()
+        .placeholder(R.drawable.ic_image_grey_24dp)
+        .error(R.drawable.ic_broken_image_grey_24dp)
 }
 
 /**
@@ -29,6 +41,7 @@ fun PhotoView.loadImageFromLink(link: String?) {
             .load(link)
             .diskCacheStrategy(DiskCacheStrategy.ALL)
             .dontAnimate()
+            .apply(createRequestOptions())
             .into(this)
     }
 }
