@@ -84,9 +84,8 @@ class FullScreenActivity : AppCompatActivity() {
      * This method is used to initialise views
      */
     private fun initViews() {
-        supportActionBar?.title = "ImageDetail"
+        supportActionBar?.title = getString(R.string.image_detail)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        //supportActionBar?.setBackgroundDrawable(this.getDrawable(R.drawable.ic_baseline_navigate_next_24))
         mProgress = findViewById(R.id.progress)
         mTitleTxtView = findViewById(R.id.title)
         mDescTxtView = findViewById(R.id.description)

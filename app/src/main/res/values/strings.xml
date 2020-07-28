@@ -5,4 +5,5 @@
     <string name="img_saved_successfully">Image Saved Successfully</string>
     <string name="failed_save_img">Failed to Save Image</string>
     <string name="download">Download</string>
+    <string name="image_detail">ImageDetail</string>
 </resources>
